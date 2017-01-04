@@ -13,6 +13,7 @@
 		<junit.version>3.8.1</junit.version>
 		<spring.version>4.3.5.RELEASE</spring.version>
 		<spring.boot.version>1.4.3.RELEASE</spring.boot.version>
+		<servlet-version>3.0</servlet-version>
 	</properties>
 
 	<dependencyManagement>
@@ -23,6 +24,7 @@
 				<version>${junit.version}</version>
 			</dependency>
 			
+			<!-- spring start -->
 	        <dependency>
 	        	<groupId>org.springframework</groupId>
 	        	<artifactId>spring-core</artifactId>
@@ -40,6 +42,15 @@
 	        	<artifactId>spring-webmvc</artifactId>
 	        	<version>${spring.version}</version>
 	        </dependency>
+	        <!-- spring end -->
+	        
+	        <!-- servlet -->
+	        <dependency>
+	        	<groupId>javax.servlet</groupId>
+	        	<artifactId>servlet-api</artifactId>
+	        	<version>${servlet-version}</version>
+	        </dependency>
+	        
 		</dependencies>
 	</dependencyManagement>
 

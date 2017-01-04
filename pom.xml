@@ -13,7 +13,7 @@
 		<junit.version>3.8.1</junit.version>
 		<spring.version>4.3.5.RELEASE</spring.version>
 		<spring.boot.version>1.4.3.RELEASE</spring.boot.version>
-		<servlet-version>3.0</servlet-version>
+		<servlet-version>3.0-alpha-1</servlet-version>
 	</properties>
 
 	<dependencyManagement>

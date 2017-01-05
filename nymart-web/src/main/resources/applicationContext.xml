@@ -6,4 +6,5 @@
 	
 	<bean name="app" class="com.asait.nymart.web.App">
 	</bean>
+
 </beans>

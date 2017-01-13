@@ -16,7 +16,7 @@ public class HelloController implements Controller{
 	public ModelAndView handleRequest(HttpServletRequest req, HttpServletResponse resp) throws Exception {
 		String user = req.getParameter("user");
 		
-		ModelAndView view = new ModelAndView("hello.jsp");
+		ModelAndView view = new ModelAndView("hi.jsp");
 		view.addObject("user", user);
 		app.sayHi(user);
 		return view;

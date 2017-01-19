@@ -5,6 +5,6 @@
         http://www.springframework.org/schema/beans/spring-beans.xsd" default-autowire="byName">
         
 	<bean name="/test/hello.htm" class="com.asait.nymart.web.controller.HelloController"/>
-	<bean name="/list.htm" class="com.asait.nymart.web.controller.production.ListController"/>
+	<bean name="/list.htm" class="com.asait.nymart.web.controller.production.ListController" scope="request"/>
 	
 </beans>

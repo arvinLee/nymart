@@ -19,6 +19,7 @@ public class HelloController implements Controller{
 		ModelAndView view = new ModelAndView("hi.jsp");
 		view.addObject("user", user);
 		app.sayHi(user);
+		System.out.println(this);
 		return view;
 	}
 

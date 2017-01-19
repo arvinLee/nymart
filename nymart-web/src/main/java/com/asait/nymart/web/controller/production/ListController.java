@@ -12,6 +12,7 @@ public class ListController implements Controller{
 	public ModelAndView handleRequest(HttpServletRequest request, HttpServletResponse response) throws Exception {
 		ModelAndView view = new ModelAndView();
 		view.setViewName("WEB-INF/production/list.jsp");
+		System.out.println(this);
 		return view;
 	}
 

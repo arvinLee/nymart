@@ -7,19 +7,22 @@
         http://www.springframework.org/schema/aop
         http://www.springframework.org/schema/aop/spring-aop.xsd" default-autowire="byName">
 	
-	<bean id="userPreferencesFactoryFactory" class="org.springframework.beans.factory.config.ObjectFactoryCreatingFactoryBean">
+	<bean id="userPreferencesFactory" class="org.springframework.beans.factory.config.ObjectFactoryCreatingFactoryBean">
 		<property name="targetBeanName" value="userPreferences"></property>
 	</bean>
 	
-	<bean id="userPreferencesFactory" factory-bean="userPreferencesFactoryFactory" factory-method="createInstance" >
-		
-	</bean>
 	
 	<bean name="app" class="com.asait.nymart.web.App">
 	</bean>
 	
 	<bean id="userPreferences" class="com.asait.nymart.web.preference.UserPreferences" scope="session">
-		<aop:scoped-proxy/>
+		<!-- <aop:scoped-proxy/> -->
 	</bean>
-
+	
+	<bean id="myConnection" class="com.asait.nymart.web.util.ConnectionUtil" factory-method="getConnection"></bean>
+	
+	<bean id="messageProductorFactory" class="com.asait.nymart.web.util.MessageProductorFactory"></bean>
+	<bean id="messageProductor" factory-bean="messageProductorFactory" factory-method="getMessageProductor"></bean>
+	
+	
 </beans>

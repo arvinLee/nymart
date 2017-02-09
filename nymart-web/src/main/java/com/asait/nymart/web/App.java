@@ -10,7 +10,7 @@ import com.asait.nymart.web.preference.UserPreferences;
  */
 public class App {
 	
-	private UserPreferences userPreferences;
+//	private UserPreferences userPreferences;
 	
 	private ObjectFactory<UserPreferences> userPreferencesFactory;
 	
@@ -20,14 +20,14 @@ public class App {
    
 	public void sayHi(String name){
 		System.out.println("hi,"+name);
-		System.out.println("hi,session id is "+userPreferences.getSessionId());
+//		System.out.println("hi,session id is "+userPreferences.getSessionId());
 		System.out.println("hi,session id is "+userPreferencesFactory.getObject().getSessionId());
 	}
 
-	public void setUserPreferences(UserPreferences userPreferences) {
-		this.userPreferences = userPreferences;
-	}
-
+//	public void setUserPreferences(UserPreferences userPreferences) {
+//		this.userPreferences = userPreferences;
+//	}
+//
 	public void setUserPreferencesFactory(ObjectFactory<UserPreferences> userPreferencesFactory) {
 		this.userPreferencesFactory = userPreferencesFactory;
 	}
